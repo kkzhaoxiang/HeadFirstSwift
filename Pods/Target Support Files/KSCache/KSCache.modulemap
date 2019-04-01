@@ -1,0 +1,6 @@
+framework module KSCache {
+  umbrella header "KSCache-umbrella.h"
+
+  export *
+  module * { export * }
+}

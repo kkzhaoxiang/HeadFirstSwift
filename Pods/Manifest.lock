@@ -1,0 +1,16 @@
+PODS:
+  - KSCache (0.0.1)
+
+DEPENDENCIES:
+  - KSCache
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KSCache
+
+SPEC CHECKSUMS:
+  KSCache: e419c978a7ca2d1a7c437826ec152fd58b0d800e
+
+PODFILE CHECKSUM: abd97d3ae7f6e9c0b964235766dbca5e0cd65535
+
+COCOAPODS: 1.7.0.beta.1

@@ -10,17 +10,8 @@ import Foundation
 
 class Duck {
     
-    var flyBehavior: FlyBehavior? {
-        didSet {
-            
-        }
-    }
-    var quackBehavior: QuackBehavior? {
-        didSet {
-            
-        }
-    }
-    
+    var flyBehavior: FlyBehavior?
+    var quackBehavior: QuackBehavior?
     
     
     func swim() {
