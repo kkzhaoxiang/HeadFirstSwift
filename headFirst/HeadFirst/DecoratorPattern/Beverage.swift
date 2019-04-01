@@ -10,11 +10,20 @@ import Foundation
 
 class Beverage {
     
-    init() {
-        desc = ""
+    enum CupSize {
+        case none
+        case tall
+        case grande
+        case venti
     }
     
     var desc: String
+    var size: CupSize
+    
+    init() {
+        desc = ""
+        size = CupSize.none
+    }
     
     func cost() -> Float {
         return 0.00

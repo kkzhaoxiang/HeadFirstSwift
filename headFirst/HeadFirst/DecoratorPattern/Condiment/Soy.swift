@@ -18,6 +18,17 @@ class Soy: CondimentDecorator {
     }
     
     override func cost() -> Float {
+        var cost = beverage.cost()
+        
+        if size == Beverage.CupSize.tall {
+            cost += 0.10
+        } else if  size == Beverage.CupSize.grande {
+            cost += 0.15
+
+        } else if  size == Beverage.CupSize.venti {
+            cost += 0.20
+        }
+        
         return 0.15 + beverage.cost()
     }
     
