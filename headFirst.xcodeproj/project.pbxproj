@@ -35,6 +35,15 @@
 		3ECFA5952251F285004FB84D /* Soy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5942251F285004FB84D /* Soy.swift */; };
 		3ECFA5972251F28F004FB84D /* Whip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5962251F28F004FB84D /* Whip.swift */; };
 		3ECFA5992251F2AF004FB84D /* CondimentDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5982251F2AF004FB84D /* CondimentDecorator.swift */; };
+		3ECFA59E2252F6A4004FB84D /* Pizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA59D2252F6A4004FB84D /* Pizza.swift */; };
+		3ECFA5A02252F70D004FB84D /* SimplePizzaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA59F2252F70C004FB84D /* SimplePizzaFactory.swift */; };
+		3ECFA5A22252F85E004FB84D /* PizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5A12252F85E004FB84D /* PizzaStore.swift */; };
+		3ECFA5A722534B48004FB84D /* NYPizzaFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5A622534B48004FB84D /* NYPizzaFactory.swift */; };
+		3ECFA5A922534BF9004FB84D /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5A822534BF9004FB84D /* Factory.swift */; };
+		3ECFA5AD22535472004FB84D /* NYStylePizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5AC22535472004FB84D /* NYStylePizzaStore.swift */; };
+		3ECFA5AF22535482004FB84D /* ChicagoStylePizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5AE22535482004FB84D /* ChicagoStylePizzaStore.swift */; };
+		3ECFA5B22253589F004FB84D /* NYPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5B12253589F004FB84D /* NYPizza.swift */; };
+		3ECFA5B42253592B004FB84D /* CaliforniaStylePizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5B32253592B004FB84D /* CaliforniaStylePizzaStore.swift */; };
 		BBAA792C3544A4B457B23D6D /* Pods_headFirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A32039CC52F00473C65B902 /* Pods_headFirst.framework */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +101,15 @@
 		3ECFA5942251F285004FB84D /* Soy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Soy.swift; sourceTree = "<group>"; };
 		3ECFA5962251F28F004FB84D /* Whip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whip.swift; sourceTree = "<group>"; };
 		3ECFA5982251F2AF004FB84D /* CondimentDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CondimentDecorator.swift; sourceTree = "<group>"; };
+		3ECFA59D2252F6A4004FB84D /* Pizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pizza.swift; sourceTree = "<group>"; };
+		3ECFA59F2252F70C004FB84D /* SimplePizzaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePizzaFactory.swift; sourceTree = "<group>"; };
+		3ECFA5A12252F85E004FB84D /* PizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaStore.swift; sourceTree = "<group>"; };
+		3ECFA5A622534B48004FB84D /* NYPizzaFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPizzaFactory.swift; sourceTree = "<group>"; };
+		3ECFA5A822534BF9004FB84D /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		3ECFA5AC22535472004FB84D /* NYStylePizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYStylePizzaStore.swift; sourceTree = "<group>"; };
+		3ECFA5AE22535482004FB84D /* ChicagoStylePizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoStylePizzaStore.swift; sourceTree = "<group>"; };
+		3ECFA5B12253589F004FB84D /* NYPizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPizza.swift; sourceTree = "<group>"; };
+		3ECFA5B32253592B004FB84D /* CaliforniaStylePizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaliforniaStylePizzaStore.swift; sourceTree = "<group>"; };
 		6A32039CC52F00473C65B902 /* Pods_headFirst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_headFirst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -178,6 +196,7 @@
 		3ECFA560224C628E004FB84D /* HeadFirst */ = {
 			isa = PBXGroup;
 			children = (
+				3ECFA59C2252F692004FB84D /* FactoryPattern */,
 				3ECFA5832251A29D004FB84D /* DecoratorPattern */,
 				3ECFA578224DC82A004FB84D /* ObserverPattern */,
 				3ECFA571224DACA1004FB84D /* StrategyPattern */,
@@ -257,6 +276,46 @@
 				3ECFA5982251F2AF004FB84D /* CondimentDecorator.swift */,
 			);
 			path = Condiment;
+			sourceTree = "<group>";
+		};
+		3ECFA59C2252F692004FB84D /* FactoryPattern */ = {
+			isa = PBXGroup;
+			children = (
+				3ECFA5B022535528004FB84D /* Pizza */,
+				3ECFA5AB22535457004FB84D /* Store */,
+				3ECFA5AA22535446004FB84D /* Factory */,
+			);
+			path = FactoryPattern;
+			sourceTree = "<group>";
+		};
+		3ECFA5AA22535446004FB84D /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				3ECFA5A822534BF9004FB84D /* Factory.swift */,
+				3ECFA59F2252F70C004FB84D /* SimplePizzaFactory.swift */,
+				3ECFA5A622534B48004FB84D /* NYPizzaFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		3ECFA5AB22535457004FB84D /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				3ECFA5A12252F85E004FB84D /* PizzaStore.swift */,
+				3ECFA5AC22535472004FB84D /* NYStylePizzaStore.swift */,
+				3ECFA5AE22535482004FB84D /* ChicagoStylePizzaStore.swift */,
+				3ECFA5B32253592B004FB84D /* CaliforniaStylePizzaStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		3ECFA5B022535528004FB84D /* Pizza */ = {
+			isa = PBXGroup;
+			children = (
+				3ECFA59D2252F6A4004FB84D /* Pizza.swift */,
+				3ECFA5B12253589F004FB84D /* NYPizza.swift */,
+			);
+			path = Pizza;
 			sourceTree = "<group>";
 		};
 		B78293508372F33C51BE0EA3 /* Frameworks */ = {
@@ -457,22 +516,31 @@
 				3ECFA56E224CAB51004FB84D /* QuackBehavior.swift in Sources */,
 				3ECFA564224C640D004FB84D /* MallardDuck.swift in Sources */,
 				3ECFA5972251F28F004FB84D /* Whip.swift in Sources */,
+				3ECFA5A722534B48004FB84D /* NYPizzaFactory.swift in Sources */,
 				3ECFA5952251F285004FB84D /* Soy.swift in Sources */,
 				3ECFA570224CB538004FB84D /* ModelDuck.swift in Sources */,
+				3ECFA5A02252F70D004FB84D /* SimplePizzaFactory.swift in Sources */,
 				3ECFA5892251E0D3004FB84D /* DarkRoast.swift in Sources */,
 				3ECFA5872251E09E004FB84D /* HouseBlend.swift in Sources */,
 				3ECFA535224C627D004FB84D /* ViewController.swift in Sources */,
 				3ECFA5912251F272004FB84D /* Milk.swift in Sources */,
+				3ECFA5B22253589F004FB84D /* NYPizza.swift in Sources */,
 				3ECFA5852251BD1B004FB84D /* Beverage.swift in Sources */,
 				3ECFA57E224DEC35004FB84D /* Observer.swift in Sources */,
 				3ECFA5992251F2AF004FB84D /* CondimentDecorator.swift in Sources */,
 				3ECFA57A224DC85B004FB84D /* WeatherData.swift in Sources */,
+				3ECFA5AD22535472004FB84D /* NYStylePizzaStore.swift in Sources */,
 				3ECFA566224C6419004FB84D /* RedheadDuck.swift in Sources */,
 				3ECFA533224C627D004FB84D /* AppDelegate.swift in Sources */,
+				3ECFA5A922534BF9004FB84D /* Factory.swift in Sources */,
 				3ECFA58B2251E0D9004FB84D /* Decaf.swift in Sources */,
+				3ECFA5AF22535482004FB84D /* ChicagoStylePizzaStore.swift in Sources */,
 				3ECFA562224C62EF004FB84D /* Duck.swift in Sources */,
+				3ECFA59E2252F6A4004FB84D /* Pizza.swift in Sources */,
+				3ECFA5A22252F85E004FB84D /* PizzaStore.swift in Sources */,
 				3ECFA56C224C7275004FB84D /* FlyBehavior.swift in Sources */,
 				3ECFA576224DAE43004FB84D /* WeaponBehavior.swift in Sources */,
+				3ECFA5B42253592B004FB84D /* CaliforniaStylePizzaStore.swift in Sources */,
 				3ECFA58D2251E0EB004FB84D /* Espresso.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
