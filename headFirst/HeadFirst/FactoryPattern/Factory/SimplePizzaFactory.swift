@@ -13,14 +13,14 @@ class SimplePizzaFactory: Factory {
     
     func createPizza(type: String) -> Pizza? {
         var pizza: Pizza?
-        
+        let factory = NYPizzaIngredientFactory()
         switch type {
         case "cheese":
-            pizza = CheesePizza()
+            pizza = CheesePizza(with: factory)
         case "pepperoni":
             pizza = PepperoniPizza()
         case "clam":
-            pizza = ClamPizza()
+            pizza = ClamPizza(with: factory)
         case "veggie":
             pizza = VeggiePizza()
         default:

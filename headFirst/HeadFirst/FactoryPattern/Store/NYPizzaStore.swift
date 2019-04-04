@@ -1,18 +1,19 @@
 //
-//  NYPizzaFactory.swift
+//  NYPizzaStore.swift
 //  headFirst
 //
-//  Created by 疯狂的石头 on 2019/4/2.
+//  Created by 疯狂的石头 on 2019/4/3.
 //  Copyright © 2019 疯狂的石头. All rights reserved.
 //
 
 import Foundation
 
-class NYPizzaFactory: Factory {
+
+class NYPizzaStore: PizzaStore {
     func createPizza(type: String) -> Pizza? {
         var pizza: Pizza?
         let factory = NYPizzaIngredientFactory()
-
+        
         switch type {
         case "cheese":
             pizza = CheesePizza(with: factory)
@@ -30,5 +31,3 @@ class NYPizzaFactory: Factory {
     
     
 }
-
-

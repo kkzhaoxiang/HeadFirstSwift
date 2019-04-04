@@ -13,12 +13,17 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let nyStore = NYStylePizzaStore()
-        let nyPizza = nyStore.orderPizza(type: "cheese")
-        
-        print("Ethan oridered a \(nyPizza?.name ?? "")")
 
+        
+        let remote = SimpleRemoteControl()
+        let light = Light()
+        let lightOn = LightOnCommand(with: light)
+        let door = GarageDoor()
+        let garageOn = GarageDoorOpenCommand(with: door)
+        remote.setCommand(command: lightOn)
+        remote.buttonWasPressed()
+        remote.setCommand(command: garageOn)
+        remote.buttonWasPressed()
     }
 
 

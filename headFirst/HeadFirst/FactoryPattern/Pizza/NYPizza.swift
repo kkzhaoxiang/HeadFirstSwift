@@ -12,9 +12,9 @@ import Foundation
 class NYStyleCheesePizza: Pizza {
     override init() {
         super.init()
-        name = "NY Style Sauce and Cheese Pizza"
-        dough = "Thin Crust Dough"
-        sauce = "Marinara Sauce"
+//        name = "NY Style Sauce and Cheese Pizza"
+//        dough = "Thin Crust Dough"
+//        sauce = "Marinara Sauce"
         
         toppings.append("Grated Reggiano Cheese")
     }
