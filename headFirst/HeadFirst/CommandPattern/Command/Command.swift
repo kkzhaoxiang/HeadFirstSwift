@@ -10,6 +10,7 @@ import Foundation
 
 protocol Command {
     func execute()
+    func undo()
 }
 
 protocol CommandProduct {
@@ -25,6 +26,16 @@ extension CommandProduct {
     }
 }
 
+class NoCommand: Command {
+    func undo() {
+        
+    }
+    
+    func execute() {
+        print("NoCommand")
+    }
+}
+
 class SimpleRemoteControl {
     var slot: Command?
     
@@ -37,47 +48,32 @@ class SimpleRemoteControl {
     }
 }
 
-
-class Light {
-    func on() {
-        print("Light is on")
-    }
+class MacroCommand: Command {
     
-    func off() {
-        print("Light is off")
-    }
-}
-
-class LightOnCommand: Command {
+    var commands: [Command]?
     
-    var light: Light
-    
-    init(with light: Light) {
-        self.light = light
+    init(with commands: [Command]?) {
+        self.commands = commands
     }
     
     func execute() {
-        light.on()
-    }
-}
-
-class GarageDoor: CommandProduct {
-    
-}
-
-class GarageDoorOpenCommand: Command {
-    
-    var door: GarageDoor
-    
-    init(with door: GarageDoor) {
-        self.door = door
+        commands?.forEach({ (command) in
+            command.execute()
+        })
     }
     
-    func execute() {
-        door.on()
+    func undo() {
+        commands?.forEach({ (command) in
+            command.undo()
+        })
     }
-
+    
+    
 }
+
+
+
+
 
 
 

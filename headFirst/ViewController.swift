@@ -14,16 +14,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+  
         
-        let remote = SimpleRemoteControl()
-        let light = Light()
-        let lightOn = LightOnCommand(with: light)
-        let door = GarageDoor()
-        let garageOn = GarageDoorOpenCommand(with: door)
-        remote.setCommand(command: lightOn)
-        remote.buttonWasPressed()
-        remote.setCommand(command: garageOn)
-        remote.buttonWasPressed()
+    }
+    
+    func createButton() {
+        let button = UIButton(type: .custom)
+        button.frame = CGRect(x: 100, y: 100, width: 100, height: 100)
+        button.backgroundColor = .orange
+        button.addTarget(self, action: #selector(clicked), for: .touchUpInside)
+        view.addSubview(button)
+    }
+    
+    @objc func clicked() {
+        print("clicked 4")
     }
 
 
