@@ -23,6 +23,9 @@
 		3E6C3108225DD8C3002B9F62 /* EnumerationIterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C3107225DD8C3002B9F62 /* EnumerationIterator.swift */; };
 		3E6C310B225DECBA002B9F62 /* HomeTheaterFacade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C310A225DECBA002B9F62 /* HomeTheaterFacade.swift */; };
 		3E6C310D225DECD8002B9F62 /* Theater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C310C225DECD8002B9F62 /* Theater.swift */; };
+		3E6C313B22608143002B9F62 /* CaffeIneBevarage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C313A22608143002B9F62 /* CaffeIneBevarage.swift */; };
+		3E6C313D226087F2002B9F62 /* CaffeIneBevarageHook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C313C226087F2002B9F62 /* CaffeIneBevarageHook.swift */; };
+		3E6C313F22608948002B9F62 /* TemplateMethodBeverageTestDrive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6C313E22608948002B9F62 /* TemplateMethodBeverageTestDrive.swift */; };
 		3ECFA533224C627D004FB84D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA532224C627D004FB84D /* AppDelegate.swift */; };
 		3ECFA535224C627D004FB84D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA534224C627D004FB84D /* ViewController.swift */; };
 		3ECFA538224C627D004FB84D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ECFA536224C627D004FB84D /* Main.storyboard */; };
@@ -99,6 +102,9 @@
 		3E6C3107225DD8C3002B9F62 /* EnumerationIterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumerationIterator.swift; sourceTree = "<group>"; };
 		3E6C310A225DECBA002B9F62 /* HomeTheaterFacade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTheaterFacade.swift; sourceTree = "<group>"; };
 		3E6C310C225DECD8002B9F62 /* Theater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theater.swift; sourceTree = "<group>"; };
+		3E6C313A22608143002B9F62 /* CaffeIneBevarage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeIneBevarage.swift; sourceTree = "<group>"; };
+		3E6C313C226087F2002B9F62 /* CaffeIneBevarageHook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaffeIneBevarageHook.swift; sourceTree = "<group>"; };
+		3E6C313E22608948002B9F62 /* TemplateMethodBeverageTestDrive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateMethodBeverageTestDrive.swift; sourceTree = "<group>"; };
 		3ECFA52F224C627D004FB84D /* headFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = headFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECFA532224C627D004FB84D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ECFA534224C627D004FB84D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -229,6 +235,16 @@
 			path = FacadePattern;
 			sourceTree = "<group>";
 		};
+		3E6C31392260812A002B9F62 /* TemplateMethodPatterns   */ = {
+			isa = PBXGroup;
+			children = (
+				3E6C313A22608143002B9F62 /* CaffeIneBevarage.swift */,
+				3E6C313C226087F2002B9F62 /* CaffeIneBevarageHook.swift */,
+				3E6C313E22608948002B9F62 /* TemplateMethodBeverageTestDrive.swift */,
+			);
+			path = "TemplateMethodPatterns  ";
+			sourceTree = "<group>";
+		};
 		3ECFA526224C627D004FB84D = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +302,7 @@
 		3ECFA560224C628E004FB84D /* HeadFirst */ = {
 			isa = PBXGroup;
 			children = (
+				3E6C31392260812A002B9F62 /* TemplateMethodPatterns   */,
 				3E6C3109225DECA2002B9F62 /* FacadePattern */,
 				3E6C30BC225C79E1002B9F62 /* AdapterPattern */,
 				3E6C309E2255F477002B9F62 /* CommandPattern */,
@@ -616,6 +633,7 @@
 				3E6C309A22548F9C002B9F62 /* NYPizzaStore.swift in Sources */,
 				3ECFA564224C640D004FB84D /* MallardDuck.swift in Sources */,
 				3ECFA5972251F28F004FB84D /* Whip.swift in Sources */,
+				3E6C313F22608948002B9F62 /* TemplateMethodBeverageTestDrive.swift in Sources */,
 				3E6C309822547FD9002B9F62 /* Ingredient.swift in Sources */,
 				3E6C3108225DD8C3002B9F62 /* EnumerationIterator.swift in Sources */,
 				3ECFA5A722534B48004FB84D /* NYPizzaFactory.swift in Sources */,
@@ -638,6 +656,7 @@
 				3ECFA57A224DC85B004FB84D /* WeatherData.swift in Sources */,
 				3ECFA5AD22535472004FB84D /* NYStylePizzaStore.swift in Sources */,
 				3ECFA566224C6419004FB84D /* RedheadDuck.swift in Sources */,
+				3E6C313D226087F2002B9F62 /* CaffeIneBevarageHook.swift in Sources */,
 				3ECFA533224C627D004FB84D /* AppDelegate.swift in Sources */,
 				3ECFA5A922534BF9004FB84D /* Factory.swift in Sources */,
 				3ECFA58B2251E0D9004FB84D /* Decaf.swift in Sources */,
@@ -654,6 +673,7 @@
 				3E6C30C0225C7C91002B9F62 /* AdapterDrive.swift in Sources */,
 				3E6C30BB225C39EC002B9F62 /* CeilingFan.swift in Sources */,
 				3E6C310B225DECBA002B9F62 /* HomeTheaterFacade.swift in Sources */,
+				3E6C313B22608143002B9F62 /* CaffeIneBevarage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,14 +10,36 @@ import Foundation
 
 
 class DvdPlayer {
+    func play(movie: String) {
+        
+    }
     
+    func on() {
+        
+    }
+    
+    func off() {
+        
+    }
+    
+    func stop() {
+        
+    }
+    
+    func eject() {
+        
+    }
 }
 
 class CdPlayer {
-    
+    func play(movie: String) {
+        
+    }
 }
 
 class TheaterLights {
-    
+    func dim(num: Int) {
+        
+    }
 }
 
