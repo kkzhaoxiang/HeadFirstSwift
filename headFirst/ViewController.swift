@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        TemplateMethodBeverageTestDrive.test()
-    
+        MenuTestDrive.test()
+
     }
     
     func createButton() {

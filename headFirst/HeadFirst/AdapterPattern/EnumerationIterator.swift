@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Iterator {
+protocol AdapterIterator {
     associatedtype Element
     func hasNext() -> Bool
     func next() -> Element
@@ -25,7 +25,7 @@ enum EnumerationIteratorError: Error {
     case removeError(errorMsg: String)
 }
 
-class EnumerationIterator<E: Enumeration>: Iterator {
+class EnumerationIterator<E: Enumeration>: AdapterIterator {
     typealias Element = E.Element
     var enumer: E
     
