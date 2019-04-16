@@ -15,8 +15,10 @@ struct MenuComponentTestDrive {
         let allMenus = Menu(with: "ALL MENUS", desc: "Desert of course!")
         allMenus.add(pancakeMenu)
         allMenus.add(dinerMenu)
-        
+    
         let newMenu = MenuItem(with: "Pasta", desc: "Spaghetti with Marinara Sauce, and a slice of sourdough bread", vegetarian: true, price: 3.89)
+        
+        // 此处有bug  如果A add B, B Add A 会导致两个forEachs互相嵌套调用,会导致调用栈溢出
         dinerMenu.add(newMenu)
         dinerMenu.add(pancakeMenu)
         pancakeMenu.add(newMenu)
