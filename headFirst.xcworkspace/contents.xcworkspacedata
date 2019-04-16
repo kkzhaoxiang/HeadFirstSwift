@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/wangzhaoxiang/MyFolder/TestCode/headFirst/headFirst/HeadFirst/IteratorsAndCombinationsPattern/MenuComponent.swift">
+   </FileRef>
+   <FileRef
       location = "group:headFirst.xcodeproj">
    </FileRef>
    <FileRef
