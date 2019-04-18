@@ -66,6 +66,8 @@
 		3ECFA5AF22535482004FB84D /* ChicagoStylePizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5AE22535482004FB84D /* ChicagoStylePizzaStore.swift */; };
 		3ECFA5B22253589F004FB84D /* NYPizza.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5B12253589F004FB84D /* NYPizza.swift */; };
 		3ECFA5B42253592B004FB84D /* CaliforniaStylePizzaStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA5B32253592B004FB84D /* CaliforniaStylePizzaStore.swift */; };
+		3EFAD63322681DF900DCC32E /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFAD63222681DF900DCC32E /* Stack.swift */; };
+		3EFAD63A22686A4A00DCC32E /* StatePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFAD63922686A4A00DCC32E /* StatePattern.swift */; };
 		BBAA792C3544A4B457B23D6D /* Pods_headFirst.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A32039CC52F00473C65B902 /* Pods_headFirst.framework */; };
 /* End PBXBuildFile section */
 
@@ -154,6 +156,8 @@
 		3ECFA5AE22535482004FB84D /* ChicagoStylePizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChicagoStylePizzaStore.swift; sourceTree = "<group>"; };
 		3ECFA5B12253589F004FB84D /* NYPizza.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYPizza.swift; sourceTree = "<group>"; };
 		3ECFA5B32253592B004FB84D /* CaliforniaStylePizzaStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaliforniaStylePizzaStore.swift; sourceTree = "<group>"; };
+		3EFAD63222681DF900DCC32E /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		3EFAD63922686A4A00DCC32E /* StatePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatePattern.swift; sourceTree = "<group>"; };
 		6A32039CC52F00473C65B902 /* Pods_headFirst.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_headFirst.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -318,6 +322,8 @@
 		3ECFA560224C628E004FB84D /* HeadFirst */ = {
 			isa = PBXGroup;
 			children = (
+				3EFAD63122681DEC00DCC32E /* Tool */,
+				3EFAD636226868AE00DCC32E /* StatePattern */,
 				3E76531E226415F6004E64E6 /* IteratorsAndCombinationsPattern */,
 				3E6C31392260812A002B9F62 /* TemplateMethodPatterns   */,
 				3E6C3109225DECA2002B9F62 /* FacadePattern */,
@@ -446,6 +452,22 @@
 				3ECFA5B12253589F004FB84D /* NYPizza.swift */,
 			);
 			path = Pizza;
+			sourceTree = "<group>";
+		};
+		3EFAD63122681DEC00DCC32E /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				3EFAD63222681DF900DCC32E /* Stack.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		3EFAD636226868AE00DCC32E /* StatePattern */ = {
+			isa = PBXGroup;
+			children = (
+				3EFAD63922686A4A00DCC32E /* StatePattern.swift */,
+			);
+			path = StatePattern;
 			sourceTree = "<group>";
 		};
 		B78293508372F33C51BE0EA3 /* Frameworks */ = {
@@ -657,6 +679,7 @@
 				3E6C309822547FD9002B9F62 /* Ingredient.swift in Sources */,
 				3E6C3108225DD8C3002B9F62 /* EnumerationIterator.swift in Sources */,
 				3ECFA5A722534B48004FB84D /* NYPizzaFactory.swift in Sources */,
+				3EFAD63322681DF900DCC32E /* Stack.swift in Sources */,
 				3E6C30B8225C3991002B9F62 /* Light.swift in Sources */,
 				3ECFA5952251F285004FB84D /* Soy.swift in Sources */,
 				3ECFA570224CB538004FB84D /* ModelDuck.swift in Sources */,
@@ -669,6 +692,7 @@
 				3ECFA535224C627D004FB84D /* ViewController.swift in Sources */,
 				3ECFA5912251F272004FB84D /* Milk.swift in Sources */,
 				3ECFA5B22253589F004FB84D /* NYPizza.swift in Sources */,
+				3EFAD63A22686A4A00DCC32E /* StatePattern.swift in Sources */,
 				3ECFA5852251BD1B004FB84D /* Beverage.swift in Sources */,
 				3ECFA57E224DEC35004FB84D /* Observer.swift in Sources */,
 				3E6C309D225595FA002B9F62 /* Slingleton.swift in Sources */,

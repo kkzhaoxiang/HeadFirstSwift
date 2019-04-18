@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        MenuComponentTestDrive.test()
+//        MenuComponentTestDrive.test()
+        
+
     }
     
     func createButton() {
@@ -34,4 +36,5 @@ class ViewController: UIViewController {
 
 
 }
+
 
