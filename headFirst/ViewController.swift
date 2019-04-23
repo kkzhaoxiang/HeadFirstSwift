@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        MenuComponentTestDrive.test()
+        CompoundPatternTestDrive.test()
         
 
     }
@@ -34,7 +34,12 @@ class ViewController: UIViewController {
         print("clicked 4")
     }
 
+}
 
+extension Array {
+    func partition(start: Int, end: Int) {
+        
+    }
 }
 
 

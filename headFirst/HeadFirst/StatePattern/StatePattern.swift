@@ -17,11 +17,21 @@ protocol State {
 
 struct StatePatternTestDrive {
     
-    enum NumberGumballs: Int {
-        case sold_out = 0
-        case no_quater = 1
-        case has_quater = 2
-        case sold = 3
+    static func test() {
+        let gumballsMachine = GumballMachine(with: 5)
+        print(gumballsMachine)
+        
+        gumballsMachine.insertQuater()
+        gumballsMachine.turnCrank()
+        
+        print(gumballsMachine)
+
+        gumballsMachine.turnCrank()
+        gumballsMachine.insertQuater()
+        gumballsMachine.turnCrank()
+        
+        print(gumballsMachine)
+
     }
     
     class GumballMachine {
@@ -30,23 +40,23 @@ struct StatePatternTestDrive {
         var noQuarterState: State?
         var hasQuarterState: State?
         var soldState: State?
+        var winnerState: State?
         var state: State?
-        var count: NumberGumballs?
+        var count = 0
         
-        init() {
-            
-        }
+        private init() { }
         
-        convenience init(with numberGumballs: NumberGumballs) {
+        convenience init(with numberGumballs: Int) {
             self.init()
             soldOutState = SoldOutState(withGumballMachine: self)
             noQuarterState = NoQuarterState(withGumballMachine: self)
             hasQuarterState = HasQueaterState(withGumballMachine: self)
             soldState = SoldState(withGumballMachine: self)
+            winnerState = WinnerState(withGumballMachine: self)
             state = soldState
             self.count = numberGumballs
             
-            if numberGumballs.rawValue > 0 {
+            if numberGumballs > 0 {
                 state = noQuarterState
             }
         }
@@ -67,9 +77,14 @@ struct StatePatternTestDrive {
         func releaseBall() {
             print("A gumball comes rolling out the slot")
             
-            if count != .sold_out {
-                count = NumberGumballs(rawValue: count?.rawValue ?? 0 - 1) ?? .sold_out
+            if count != 0 {
+                count -= 1
             }
+        }
+        
+        func refill(numgallballs: Int) {
+            count = numgallballs
+            state = noQuarterState
         }
     }
     
@@ -97,7 +112,7 @@ struct StatePatternTestDrive {
         func dispense() {
             gumballMachine.releaseBall()
             
-            if gumballMachine.count != .sold_out {
+            if gumballMachine.count != 0 {
                 gumballMachine.state = gumballMachine.noQuarterState
             } else {
                 print("Qops, out of gumballs!")
@@ -113,15 +128,19 @@ struct StatePatternTestDrive {
             self.gumballMachine = gumballMachine
         }
         func insertQuater() {
+            print("You can't insert a quater, the machine is sold out")
         }
         
         func ejectQuater() {
+            print("You can't eject, you haven't insert a quater yet")
         }
         
         func turnCrank() {
+            print("You turned, but there no qumballs")
         }
         
         func dispense() {
+            print("No gumball dispensed")
         }
         
     }
@@ -168,21 +187,50 @@ struct StatePatternTestDrive {
         
         func turnCrank() {
             print("You haven't inserted a quater")
+            let winner = Int.random(in: 0..<10)
+            if winner == 0 && gumballMachine.count > 0{
+                gumballMachine.state = gumballMachine.winnerState
+            } else {
+                gumballMachine.state = gumballMachine.soldState
+            }
         }
         
         func dispense() {
-            print("You need to pay first")
+            print("No gumball dispensed")
         }
         
     }
     
-//    class WinnerState: State {
-//        var gumballMachine: GumballMachine
-//
-//        init(withGumballMachine gumballMachine: GumballMachine) {
-//            self.gumballMachine = gumballMachine
-//        }
-//
-//
-//    }
+    class WinnerState: State {
+        
+        var gumballMachine: GumballMachine
+        
+        init(withGumballMachine gumballMachine: GumballMachine) {
+            self.gumballMachine = gumballMachine
+        }
+        func insertQuater() {
+            
+        }
+        
+        func ejectQuater() {
+            
+        }
+        
+        func turnCrank() {
+            
+        }
+        
+        func dispense() {
+            print("YOU'RE A WINNER! You get two gumballs for your quarter")
+            gumballMachine.releaseBall()
+            
+            if gumballMachine.count != 0 {
+                gumballMachine.state = gumballMachine.noQuarterState
+            } else {
+                print("Qops, out of gumballs")
+                gumballMachine.state = gumballMachine.soldOutState
+            }
+        }
+
+    }
 }
