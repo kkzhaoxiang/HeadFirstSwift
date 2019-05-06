@@ -21,7 +21,7 @@ struct MenuTestDrice {
         let cafeMenu = CafeMeun()
         let waitress = Waitress(with: pancakeHouseMenu, dinerMenu: dinerMenu, cafeMenu: cafeMenu)
         waitress.printMenu()
-    }
+    } 
     
     class MenuItem {
         var name: String

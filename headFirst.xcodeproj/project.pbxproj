@@ -32,6 +32,9 @@
 		3E765322226421AF004E64E6 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E765321226421AF004E64E6 /* Menu.swift */; };
 		3E76532A22657EB4004E64E6 /* MenuComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E76532922657EB4004E64E6 /* MenuComponent.swift */; };
 		3E8B554B226EE5CC00EC7C48 /* CompoundPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B554A226EE5CC00EC7C48 /* CompoundPattern.swift */; };
+		3E8B554E226FF26A00EC7C48 /* BeatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B554D226FF26A00EC7C48 /* BeatModel.swift */; };
+		3E8B55502270001500EC7C48 /* BeatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B554F2270001500EC7C48 /* BeatView.swift */; };
+		3E8B55522270001D00EC7C48 /* BeatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E8B55512270001D00EC7C48 /* BeatController.swift */; };
 		3ECFA533224C627D004FB84D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA532224C627D004FB84D /* AppDelegate.swift */; };
 		3ECFA535224C627D004FB84D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECFA534224C627D004FB84D /* ViewController.swift */; };
 		3ECFA538224C627D004FB84D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3ECFA536224C627D004FB84D /* Main.storyboard */; };
@@ -120,6 +123,9 @@
 		3E765321226421AF004E64E6 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		3E76532922657EB4004E64E6 /* MenuComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MenuComponent.swift; path = /Users/wangzhaoxiang/MyFolder/TestCode/headFirst/headFirst/HeadFirst/IteratorsAndCombinationsPattern/MenuComponent.swift; sourceTree = "<absolute>"; };
 		3E8B554A226EE5CC00EC7C48 /* CompoundPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundPattern.swift; sourceTree = "<group>"; };
+		3E8B554D226FF26A00EC7C48 /* BeatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatModel.swift; sourceTree = "<group>"; };
+		3E8B554F2270001500EC7C48 /* BeatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatView.swift; sourceTree = "<group>"; };
+		3E8B55512270001D00EC7C48 /* BeatController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatController.swift; sourceTree = "<group>"; };
 		3ECFA52F224C627D004FB84D /* headFirst.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = headFirst.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ECFA532224C627D004FB84D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3ECFA534224C627D004FB84D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -276,9 +282,20 @@
 		3E8B5549226EE55B00EC7C48 /* CompoundPattern */ = {
 			isa = PBXGroup;
 			children = (
+				3E8B554C226FF23800EC7C48 /* MVC */,
 				3E8B554A226EE5CC00EC7C48 /* CompoundPattern.swift */,
 			);
 			path = CompoundPattern;
+			sourceTree = "<group>";
+		};
+		3E8B554C226FF23800EC7C48 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				3E8B554D226FF26A00EC7C48 /* BeatModel.swift */,
+				3E8B554F2270001500EC7C48 /* BeatView.swift */,
+				3E8B55512270001D00EC7C48 /* BeatController.swift */,
+			);
+			path = MVC;
 			sourceTree = "<group>";
 		};
 		3ECFA526224C627D004FB84D = {
@@ -694,6 +711,7 @@
 				3E6C30A02255F488002B9F62 /* Command.swift in Sources */,
 				3E6C30B4225C3976002B9F62 /* Stereo.swift in Sources */,
 				3ECFA574224DADF4004FB84D /* Character.swift in Sources */,
+				3E8B55522270001D00EC7C48 /* BeatController.swift in Sources */,
 				3ECFA580224DF477004FB84D /* CurrentConditionsDisplay.swift in Sources */,
 				3ECFA5932251F279004FB84D /* Mocha.swift in Sources */,
 				3ECFA56E224CAB51004FB84D /* QuackBehavior.swift in Sources */,
@@ -741,6 +759,7 @@
 				3ECFA562224C62EF004FB84D /* Duck.swift in Sources */,
 				3E6C30BE225C79F2002B9F62 /* Turkey.swift in Sources */,
 				3ECFA59E2252F6A4004FB84D /* Pizza.swift in Sources */,
+				3E8B55502270001500EC7C48 /* BeatView.swift in Sources */,
 				3ECFA5A22252F85E004FB84D /* PizzaStore.swift in Sources */,
 				3E6C30A4225B1BF9002B9F62 /* RemoteLoader.swift in Sources */,
 				3ECFA56C224C7275004FB84D /* FlyBehavior.swift in Sources */,
@@ -748,6 +767,7 @@
 				3ECFA5B42253592B004FB84D /* CaliforniaStylePizzaStore.swift in Sources */,
 				3ECFA58D2251E0EB004FB84D /* Espresso.swift in Sources */,
 				3E6C30C0225C7C91002B9F62 /* AdapterDrive.swift in Sources */,
+				3E8B554E226FF26A00EC7C48 /* BeatModel.swift in Sources */,
 				3E6C30BB225C39EC002B9F62 /* CeilingFan.swift in Sources */,
 				3E6C310B225DECBA002B9F62 /* HomeTheaterFacade.swift in Sources */,
 				3E6C313B22608143002B9F62 /* CaffeIneBevarage.swift in Sources */,
